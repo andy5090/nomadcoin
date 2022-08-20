@@ -27,7 +27,7 @@ func FromBytes(i interface{}, data []byte) {
 }
 
 func Hash(i interface{}) string {
-	s := fmt.Sprint("%v", i)
+	s := fmt.Sprintf("%v", i)
 	hash := sha256.Sum256([]byte(s))
 	return fmt.Sprintf("%x", hash)
 }

@@ -4,11 +4,21 @@ http://localhost:4000/status
 ###
 http://localhost:4000/blocks
 ###
+http://localhost:4000/balance/andy
+###
 POST http://localhost:4000/blocks
 
+###
+POST http://localhost:4000/transactions
+
 {
-    "message": "Data for my block"
+    "to": "lynn",
+    "amount": 30
 }
+
+###
+http://localhost:4000/mempool
+
 
 ###
 http://localhost:4000/blocks/1febc352c08465ec6d45b6dae936db4ce9fb3c7b95a603b5e6a1b48903acb945
