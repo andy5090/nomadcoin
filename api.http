@@ -6,6 +6,8 @@ http://localhost:4000/blocks
 ###
 http://localhost:4000/balance/andy
 ###
+http://localhost:4000/balance/andy?total=true
+###
 POST http://localhost:4000/blocks
 
 ###
@@ -13,7 +15,7 @@ POST http://localhost:4000/transactions
 
 {
     "to": "lynn",
-    "amount": 30
+    "amount": 50
 }
 
 ###
